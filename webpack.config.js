@@ -12,6 +12,9 @@ module.exports = {
         assetModuleFilename: 'images/[name][ext][query]'
     },
     devtool: "eval-source-map",
+    devServer: { // dev server location: http://localhost:8080/pages/index.html
+        watchFiles: ["./src/pages/index.html"],
+    },
     mode: `development`,
     plugins: [
         new HtmlWebpackPlugin({
