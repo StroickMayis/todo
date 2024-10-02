@@ -1,0 +1,24 @@
+.pageDisplay {
+    flex: 17 1 auto;
+    background-color: var(--grey30);
+}
+.pageInfo {
+    position: absolute; 
+    margin: 20px 60px;
+}
+.pageTitle {
+    font-size: 26px;
+    text-align: start;
+    padding: 3px 12px;
+}
+.pageInfoLine {
+    height: 1px;
+    min-width: 300px;
+    background-color: var(--grey120);
+}
+.pageDate {
+    color: var(--grey160);
+    font-size: 13px;
+    text-align: start;
+    padding: 3px 12px;
+}

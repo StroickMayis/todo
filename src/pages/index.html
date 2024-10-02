@@ -7,46 +7,78 @@
     <title>OneNote Clone</title>
 </head>
 <body>
+    <dialog class="addNotebookModal">
+        <button class="closeAddNotebookModalBtn">X</button>
+        <label for="notebookName">Notebook Name:</label>
+        <input class="notebookName" name="notebookName" type="text">
+        <button class="createNotebookButton" type="button">Create Notebook</button>
+    </dialog>
     <header>
         <div class="appBar">
-            <div>Logo</div>
-            <div>Back</div>
-            <div>Undo</div>
-            <div>QuickAccess</div>
-            <div>pageTitile - OneNote</div>
-            <div>Searchbar</div>
-            <div>Account</div>
-            <div>_</div>
-            <div>[]</div>
-            <div>X</div>
+            <div class="appBarLeft">
+                <div class="logo">📝</div>
+                <div class="backButton">←</div>
+                <div class="undoButton">↺</div>
+                <div class="quickAccess">☲</div>
+                <div class="pageTitleDisplay">pageTitile - OneNote</div>
+            </div>
+            
+            <div class="search"> 
+                <!-- <div class="searchIcon"></div> -->
+                <div class="searchText">Search</div>
+            </div>
+            <div class="appBarRight">
+                <div class="appBarGapper"></div>
+                <div class="account">Account</div>
+                <div class="minimize">_</div>
+                <div class="maximize">⛶</div>
+                <div class="close">X</div>
+            </div>
         </div>
         <div class="optionBar">
-            <div>File</div>
-            <div>Home</div>
-            <div>Insert</div>
-            <div>Draw</div>
-            <div>History</div>
-            <div>Review</div>
-            <div>View</div>
-            <div>Help</div>
-            <div>Sticky Notes</div>
-            <div>Share</div>
-            <div>Feedback</div>
+            <div class="fileButton optionLeft">&nbsp;&nbsp;&nbsp;File&nbsp;&nbsp;&nbsp;</div>
+            <div class="optionLeft">&nbsp;Home&nbsp;</div>
+            <div class="optionLeft">&nbsp;Insert&nbsp;</div>
+            <div class="optionLeft">&nbsp;Draw&nbsp;</div>
+            <div class="optionLeft">&nbsp;History&nbsp;</div>
+            <div class="optionLeft">&nbsp;Review&nbsp;</div>
+            <div class="optionLeft">&nbsp;View&nbsp;</div>
+            <div class="optionLeft">&nbsp;Help&nbsp;</div>
+            <div class="divider"></div>
+            <div class="stickyNotes">Sticky Notes</div>
+            <div class="share">
+                <div class="shareText">Share</div>
+                <div class="shareCarret">▼</div>
+            </div>
+            <div class="feedback">💭</div>
         </div>
     </header>
     <main>
         <div class="categoryBar">
             <div class="selectionPanel">
-                <div class="notebookSelect">
-                    <div class="notebookName">Notebook</div>
-                    <div class="notebookCarret">▼</div>
+                <div class="notebookSelect switchNotebook">
+                    <div class="notebookName switchNotebook">Notebook</div>
+                    <div class="notebookCarret switchNotebook">▼</div>
+                    <!-- Notebook Dropdown Conatiner Below Right Here -->
+                    <div class="notebookDropdownContainer">
+                        <div class="notebookDropdown addNotebook addNotebookButton">
+                            <div class="notebookDropdown plus addNotebookButton">+</div>
+                            <div class="notebookDropdown text addNotebookButton">Add Notebook</div>
+                        </div>
+                        <div class="notebookDropdownListContainer"></div>
+                    </div>
                 </div>
+                
                 <div class="sectionSelect">
                     <div class="section">Section 1</div>
                     <div class="section">Section 2</div>
-                    <div class="section">Section 3</div>
+                    <div class="section selected">Section 3</div>
+                    <div class="section add">+</div>
                 </div>
-                <div class="selectionSearch">SelectionSearch</div>
+                <div class="selectionSearch">
+                    <div class="selectionSearchText">Seach Notebooks</div>
+                    <div class="selectionSearchCarret">▼</div>
+                </div>
             </div>
             <div class="sectionColorPanel"></div>
         </div>
@@ -64,9 +96,12 @@
             </div>
             <div class="pageDisplay">
                 <div class="page">
-                    <div class="pageTitle">Title</div>
-                    <div class="pageDate">Date</div>
-                    <div class="pageContent">Content</div>
+                    <div class="pageInfo">
+                        <div class="pageTitle">Title</div>
+                        <div class="pageInfoLine"></div>
+                        <div class="pageDate">Tuesday, October 1, 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4:46 PM</div>
+                    </div>
+                    <div class="pageContent"></div>
                 </div>
             </div>
         </div>

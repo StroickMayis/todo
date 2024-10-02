@@ -5,17 +5,38 @@
     box-sizing: border-box;
     font-family: Calibri, Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
+    font-weight: 100;
     text-align: center;
 }
 :root {
-    --pageDisplayBGColor: rgb(32,31,30);
-    --pageListBGColor: rgb(41,41,41);
-    --pageListHoverBGColor: rgb(56,56,56);
-    --pageListSelectedBGColor: rgb(50,50,50);
-    --addPageButtonBGColor: rgb(61,61,61);
-    --addPageButtonHoverBGColor: rgb(100,100,100);
+    --grey10: rgb(10,10,10);
+    --grey20: rgb(20,20,20);
+    --grey30: rgb(30,30,30);
+    --grey40: rgb(40,40,40);
+    --grey50: rgb(50,50,50);
+    --grey60: rgb(60,60,60);
+    --grey70: rgb(70,70,70);
+    --grey80: rgb(80,80,80);
+    --grey90: rgb(90,90,90);
+    --grey100: rgb(100,100,100);
+    --grey110: rgb(110,110,110);
+    --grey120: rgb(120,120,120);
+    --grey130: rgb(130,130,130);
+    --grey140: rgb(140,140,140);
+    --grey150: rgb(150,150,150);
+    --grey160: rgb(160,160,160);
+    --grey170: rgb(170,170,170);
+    --grey180: rgb(180,180,180);
+    --grey190: rgb(190,190,190);
+    --grey200: rgb(200,200,200);
+    --grey210: rgb(210,210,210);
+    --grey220: rgb(220,220,220);
+    --grey230: rgb(230,230,230);
+    --grey240: rgb(240,240,240);
+    --grey250: rgb(250,250,250);
     --addPageButtonTextColor: rgb(200, 175, 230);
-    --headerBGColor: rgb(10,10,10);
+    --shareButton: rgb(220, 205, 246);
+    --shareButtonHover: rgb(240, 225, 255);
     --colorOptionBlue: rgb(5,80,152);
 }
 body {
@@ -34,121 +55,4 @@ button { /* Button Reset */
     font: inherit;
     color: inherit;
     background: none;
-}
-main {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-}
-header {
-    padding: 8px 4px;
-}
-
-.appBar {
-    display: flex;
-}
-.appBar div {
-    flex: 1 1 auto;
-}
-
-.optionBar {
-    display: flex;
-}
-.optionBar div {
-    flex: 1 1 auto;
-}
-
-.selectionPanel {
-    display: flex;
-    padding: 0 8px;
-}
-.sectionSelect {
-    display: flex;
-    flex: 1 1 auto;
-    padding: 0 40px;
-}
-.section {
-    font-size: 15px;
-    background-color: var(--colorOptionBlue);
-    border-radius: 10px 10px 0 0;
-    padding: 4px 20px;
-    margin-right: 2px;
-}
-.sectionColorPanel {
-    height: 4px;
-    background-color: var(--colorOptionBlue);
-    border-radius: 10px 10px 0 0;
-}
-.notebookSelect {
-    display: flex;
-}
-.notebookName {
-    font-size: 17px;
-    flex: 0 1 auto !important;
-}
-.notebookCarret {
-    flex: 0 1 auto !important;
-    text-align: start;
-    padding-left: 8px;
-    display: flex;
-    align-items: center;
-}
-
-.noteBar {
-    display: flex;
-    background-color: var(--headerBGColor);
-    flex: 1 1 auto;
-}
-.pageAddSort {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px 8px;
-}
-.addPageButton {
-    color: var(--addPageButtonTextColor);
-    background-color: var(--addPageButtonBGColor);
-    padding: 4px 16px;
-    border-radius: 5px;
-    border: 0.5px solid var(--addPageButtonHoverBGColor);
-}
-.addPageButton:hover {
-    background-color: var(--addPageButtonHoverBGColor);
-    cursor: pointer;
-}
-.sortPageButton {
-    padding: 4px 16px;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    font: inherit;
-    color: inherit;
-    background: none
-}
-.sortPageButton:hover {
-    background-color: var(--addPageButtonBGColor);
-    cursor: pointer;
-    
-}
-.pageList {
-    padding: 8px;
-    padding-top: 0px;
-}
-.pages {
-    border-radius: 3px;
-    background-color: var(--pageListBGColor);
-    padding: 4px 16px;
-    margin-bottom: 4px;
-    text-align: start;
-}
-.pages:hover{
-    background-color: var(--pageListHoverBGColor);
-    cursor: pointer;
-}
-.pageSelect{
-    flex: 3 1 auto;
-    background-color: var(--pageListBGColor);
-}
-.pageDisplay {
-    flex: 17 1 auto;
-    background-color: var(--pageDisplayBGColor);
 }

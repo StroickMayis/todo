@@ -1,0 +1,118 @@
+.notebookDropdownContainer {
+    display: none;
+    padding: 12px;
+    position: absolute;
+    height: 350px;
+    width: 225px;
+    background-color: var(--grey40);
+    border: 1px solid var(--grey120);
+    transform: translateY(28px) translateX(-22px);
+}
+.notebookDropdown.addNotebook {
+    display: flex;
+    padding: 0px 16px;
+    border-radius: 4px;
+    align-items: center;
+    
+}
+.notebookDropdown.addNotebook:hover {
+    background-color: var(--grey50);
+    cursor: pointer;
+}
+.notebookDropdown.plus {
+    color: var(--shareButton);
+    font-size: 22px;
+    padding-bottom: 2px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+.notebookDropdown.text {
+    color: var(--shareButton);
+}
+
+
+
+.notebookDropdown.notebook {
+    display: flex;
+    padding: 4px 16px;
+    border-radius: 4px;
+    align-items: center;
+}
+.notebookDropdown.notebook:hover {
+    background-color: var(--grey50);
+    cursor: pointer;
+}
+.notebookDropdown.icon {
+    color: var(--shareButton);
+    padding-bottom: 2px;
+    margin-right: 4px;
+}
+.notebookDropdown.title {
+    color: var(--shareButton);
+}
+
+.addNotebookModal {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--grey120);
+    border-radius: 4px;
+    background-color: var(--grey20);
+    position: absolute;
+    width: 500px;
+    height: 120px;
+    margin-left: -250px;
+    margin-top: -60px;
+    top: 50%;
+    left: 50%;
+}
+.addNotebookModal[open] {
+    display: flex;
+}
+.addNotebookModal::backdrop {
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+.addNotebookModal label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -40px;
+}
+.addNotebookModal input {
+    margin-top: -5px;
+    flex: 0 0 auto;
+    width: 400px;
+    background-color: var(--grey40);
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid var(--grey120);
+}
+.addNotebookModal input:hover {
+    background-color: var(--grey60);
+}
+.addNotebookModal input::placeholder {
+    color: white;
+}
+.createNotebookButton {
+    margin-bottom: 12px;
+    border: 1px solid var(--grey120);
+    padding: 4px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.createNotebookButton:hover {
+    background-color: var(--grey60);
+    border: 1px solid var(--grey140);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.closeAddNotebookModalBtn {
+    align-self: start;
+    padding: 4px 8px;
+    margin: 4px 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.closeAddNotebookModalBtn:hover {
+    background-color: var(--grey60);
+    border-radius: 4px;
+}

@@ -1,0 +1,144 @@
+main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectionPanel {
+    display: flex;
+    padding: 0 8px;
+}
+.sectionSelect {
+    display: flex;
+    align-items: end;
+    flex: 1 1 auto;
+    padding: 0 40px;
+}
+.section {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    font-size: 14px;
+    background-color: var(--colorOptionBlue);
+    border-radius: 10px 10px 0 0;
+    padding: 0px 20px;
+    margin-right: 2px;
+    box-shadow: 0 -8px 10px -10px black inset;
+}
+.section.selected {
+    height: 28px;
+    font-weight: bold;
+    box-shadow: none;
+}
+.section.add {
+    height: 23px;
+    background-color: var(--grey40);
+    border: 1px solid var(--grey100);
+    border-bottom: none;
+    padding: 0px 14px;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
+.sectionColorPanel {
+    height: 4px;
+    background-color: var(--colorOptionBlue);
+    border-radius: 10px 10px 0 0;
+}
+.notebookSelect {
+    padding: 5px 14px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    display: flex;
+    position: relative;
+}
+.notebookSelect:hover {
+    background-color: var(--grey40);
+    cursor: pointer;
+}
+.notebookName {
+    font-size: 18px;
+    flex: 0 1 auto !important;
+}
+.notebookCarret {
+    font-size: 12px;
+    flex: 0 1 auto !important;
+    text-align: start;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.selectionSearch {
+    display: flex;
+    align-items: center;
+    background-color: var(--grey50);
+    border-radius: 4px;
+    height: 25px;
+    padding: 4px 20px;
+}
+.selectionSearchText {
+    font-size: 13px;
+}
+.selectionSearchCarret {
+    font-size: 10px;
+    text-align: start;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+.noteBar {
+    display: flex;
+    background-color: var(--grey10);
+    flex: 1 1 auto;
+}
+.pageAddSort {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 8px;
+}
+.addPageButton {
+    color: var(--addPageButtonTextColor);
+    background-color: var(--grey50);
+    padding: 4px 16px;
+    border-radius: 5px;
+    border: 0.5px solid var(--grey100);
+}
+.addPageButton:hover {
+    background-color: var(--grey100);
+    cursor: pointer;
+}
+.sortPageButton {
+    padding: 4px 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font: inherit;
+    color: inherit;
+    background: none
+}
+.sortPageButton:hover {
+    background-color: var(--grey50);
+    cursor: pointer;
+    
+}
+.pageList {
+    padding: 8px;
+    padding-top: 0px;
+}
+.pages {
+    border-radius: 3px;
+    background-color: var(--grey40);
+    padding: 4px 16px;
+    margin-bottom: 4px;
+    text-align: start;
+}
+.pages:hover{
+    background-color: var(--grey50);
+    cursor: pointer;
+}
+.pageSelect{
+    flex: 3 1 auto;
+    background-color: var(--grey40);
+}

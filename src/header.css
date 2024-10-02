@@ -1,0 +1,161 @@
+header {
+    padding: 8px 4px;
+}
+
+.appBar {
+    display: flex;
+    /* justify-content: space-between; */
+}
+.appBarLeft {
+    flex: 1 1 auto;
+    display: flex;
+}
+.appBarRight {
+    justify-content: end;
+    flex: 1 1 auto;
+    display: flex;
+}
+.pageTitleDisplay {
+    flex: .5 1 auto;
+}
+.appBarGapper {
+    flex: .5 1 auto;
+}
+.logo {
+    font-size: 18px;
+    padding: 4px 8px;
+}
+.backButton {
+    font-size: 18px;
+    padding: 4px 8px;
+}
+.undoButton {
+    font-size: 18px;
+    padding: 4px 8px;
+}
+.quickAccess {
+    font-size: 18px;
+    padding: 4px 8px;
+}
+.pageTitleDisplay {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+    padding-bottom: 6px;
+    text-align: start;
+}
+.search {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 1 1 auto;
+    max-width: 25dvw;
+    padding: 4px 16px;
+    background-color: var(--grey20);
+    border: 1px solid var(--grey40);
+    border-radius: 4px;
+    text-align: start;
+}
+/* .searchIcon {
+    color: var(--grey100);
+    font-size: 24px;
+    margin-right: 8px;
+} */
+.searchText {
+    font-size: 15px;
+    color: var(--grey120);
+    text-align: start;
+}
+.account {
+    display: flex;
+    align-items: center;
+    padding: 4px 16px;
+    margin-right: 36px;
+}
+.minimize,
+.maximize,
+.close {
+    padding: 4px 8px;
+    font-size: 16px;
+}
+.close {
+    font-size: 18px;
+}
+.minimize {
+    font-size: 16px;
+}
+
+.optionBar {
+    display: flex;
+    padding-top: 10px;
+    max-height: 36px;
+}
+.optionLeft {
+    padding: 4px 12px;
+    font-size: 15px;
+}
+.optionLeft:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: var(--grey100);
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+.fileButton {
+    padding-left: 0;
+}
+.stickyNotes {
+    text-align: end;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: var(--grey30);
+    border: 1px solid var(--grey120);
+    border-radius: 4px;
+    height: 25px;
+    padding: 2px 8px;
+}
+.stickyNotes:hover {
+    background-color: var(--grey50);
+    border: 1px solid var(--grey100);
+}
+
+.share {
+    cursor: pointer;
+    padding: 2px 8px;
+    background-color: var(--shareButton);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    height: 25px;
+    margin-left: 8px;
+}
+.share div {
+    color: black;
+}
+.share:hover {
+    background-color: var(--shareButtonHover);
+}
+.shareCarret {
+    font-size: 9px;
+    margin-left: 6px;
+}
+.feedback {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.feedback:hover {
+    background-color: var(--grey40)
+}
+.divider {
+    flex: 1 1 auto;
+    padding: 4px 16px;
+}
