@@ -15,6 +15,7 @@ main {
     padding: 0 40px;
 }
 .section {
+    cursor: pointer;
     display: flex;
     align-items: center;
     height: 24px;
@@ -25,7 +26,10 @@ main {
     margin-right: 2px;
     box-shadow: 0 -8px 10px -10px black inset;
 }
-.section.selected {
+.section:hover {
+    background-color: var(--colorOptionBlueHover);
+}
+.section.open {
     height: 28px;
     font-weight: bold;
     box-shadow: none;
@@ -137,6 +141,9 @@ main {
 .pages:hover{
     background-color: var(--grey50);
     cursor: pointer;
+}
+.pages.open {
+    background-color: var(--grey60);
 }
 .pageSelect{
     flex: 3 1 auto;

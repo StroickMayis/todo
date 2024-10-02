@@ -8,6 +8,21 @@ import { state } from "./state";
 const body = document.querySelector(`body`);
 
 body.addEventListener(`click`, (e) => {
+    if(e.target.classList.contains(`pages`)) {
+        state.openPage(e.target);
+    }
+    if(e.target.classList.contains(`addPageButton`)) {
+        state.createNewPage();
+    }
+    if(e.target.classList.contains(`section`) && !e.target.classList.contains(`add`) && !e.target.classList.contains(`open`)) {
+        state.openSection(e.target);
+    }
+    if(e.target.classList.contains(`section`) && e.target.classList.contains(`add`)) {
+        state.createNewSection();
+    }
+    if(e.target.classList.contains(`notebookDropdown`) && e.target.classList.contains(`open`)) {
+        state.changeOpenNotebook(e.target);
+    }
     if(e.target.classList.contains(`addNotebookButton`)) {
          state.showAddNotebookModal();
     }
@@ -29,5 +44,4 @@ body.addEventListener(`click`, (e) => {
     } else {
         state.hideAllDropdowns();
     }
-
-})
+});

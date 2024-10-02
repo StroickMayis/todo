@@ -37,7 +37,8 @@
     --addPageButtonTextColor: rgb(200, 175, 230);
     --shareButton: rgb(220, 205, 246);
     --shareButtonHover: rgb(240, 225, 255);
-    --colorOptionBlue: rgb(5,80,152);
+    --colorOptionBlue: rgb(5,80,150);
+    --colorOptionBlueHover: rgb(6,95,170);
 }
 body {
     background-color: black;
