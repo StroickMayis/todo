@@ -12,6 +12,9 @@ body.addEventListener(`click`, (e) => { // TODO: click event to change section c
     if(state.sectionRenamingElement && !(e.target.classList.contains(`sectionName`) && e.target.dataset.index === state.sectionRenamingElement.dataset.index)) { // ! Needs to be placed near top.
         state.stopSectionRenaming();
     }
+    if(e.target.classList.contains(`color`) && e.target.classList.contains(`dropdown`)) {
+        state.changeColor(e.target);
+    }
     if(e.target.classList.contains(`dropdownRename`)) {
         state.renameSection();
     }

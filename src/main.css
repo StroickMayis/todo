@@ -20,14 +20,109 @@ main {
     align-items: center;
     height: 24px;
     font-size: 14px;
-    background-color: var(--colorOptionBlue);
+    background-color: var(--blue);
     border-radius: 10px 10px 0 0;
     padding: 0px 20px;
     margin-right: 2px;
     box-shadow: 0 -8px 10px -10px black inset;
 }
-.section:hover {
-    background-color: var(--colorOptionBlueHover);
+/* section Colors */
+.section[data-color="blue"]{
+    background-color: var(--blue);
+}
+.section[data-color="yellow"]{
+    background-color: var(--yellow);
+}
+.section[data-color="green"]{
+    background-color: var(--green);
+}
+.section[data-color="red"]{
+    background-color: var(--red);
+}
+.section[data-color="purple"]{
+    background-color: var(--purple);
+}
+.section[data-color="cyan"]{
+    background-color: var(--cyan);
+}
+.section[data-color="orange"]{
+    background-color: var(--orange);
+}
+.section[data-color="magenta"]{
+    background-color: var(--magenta);
+}
+.section[data-color="blueMist"]{
+    background-color: var(--blueMist);
+}
+.section[data-color="purpleMist"]{
+    background-color: var(--purpleMist);
+}
+.section[data-color="tan"]{
+    background-color: var(--tan);
+}
+.section[data-color="lemonLime"]{
+    background-color: var(--lemonLime);
+}
+.section[data-color="apple"]{
+    background-color: var(--apple);
+}
+.section[data-color="teal"]{
+    background-color: var(--teal);
+}
+.section[data-color="redChalk"]{
+    background-color: var(--redChalk);
+}
+.section[data-color="silver"]{
+    background-color: var(--silver);
+}
+/* section Hover Colors */
+.section:hover[data-color="blue"]{
+    background-color: var(--blueHover);
+}
+.section:hover[data-color="yellow"]{
+    background-color: var(--yellowHover);
+}
+.section:hover[data-color="green"]{
+    background-color: var(--greenHover);
+}
+.section:hover[data-color="red"]{
+    background-color: var(--redHover);
+}
+.section:hover[data-color="purple"]{
+    background-color: var(--purpleHover);
+}
+.section:hover[data-color="cyan"]{
+    background-color: var(--cyanHover);
+}
+.section:hover[data-color="orange"]{
+    background-color: var(--orangeHover);
+}
+.section:hover[data-color="magenta"]{
+    background-color: var(--magentaHover);
+}
+.section:hover[data-color="blueMist"]{
+    background-color: var(--blueMistHover);
+}
+.section:hover[data-color="purpleMist"]{
+    background-color: var(--purpleMistHover);
+}
+.section:hover[data-color="tan"]{
+    background-color: var(--tanHover);
+}
+.section:hover[data-color="lemonLime"]{
+    background-color: var(--lemonLimeHover);
+}
+.section:hover[data-color="apple"]{
+    background-color: var(--appleHover);
+}
+.section:hover[data-color="teal"]{
+    background-color: var(--tealHover);
+}
+.section:hover[data-color="redChalk"]{
+    background-color: var(--redChalkHover);
+}
+.section:hover[data-color="silver"]{
+    background-color: var(--silverHover);
 }
 .section.open {
     height: 28px;
@@ -55,8 +150,55 @@ main {
 }
 .sectionColorPanel {
     height: 4px;
-    background-color: var(--colorOptionBlue);
     border-radius: 10px 10px 0 0;
+}
+.sectionColorPanel[data-color="blue"]{
+    background-color: var(--blue);
+}
+.sectionColorPanel[data-color="yellow"]{
+    background-color: var(--yellow);
+}
+.sectionColorPanel[data-color="green"]{
+    background-color: var(--green);
+}
+.sectionColorPanel[data-color="red"]{
+    background-color: var(--red);
+}
+.sectionColorPanel[data-color="purple"]{
+    background-color: var(--purple);
+}
+.sectionColorPanel[data-color="cyan"]{
+    background-color: var(--cyan);
+}
+.sectionColorPanel[data-color="orange"]{
+    background-color: var(--orange);
+}
+.sectionColorPanel[data-color="magenta"]{
+    background-color: var(--magenta);
+}
+.sectionColorPanel[data-color="blueMist"]{
+    background-color: var(--blueMist);
+}
+.sectionColorPanel[data-color="purpleMist"]{
+    background-color: var(--purpleMist);
+}
+.sectionColorPanel[data-color="tan"]{
+    background-color: var(--tan);
+}
+.sectionColorPanel[data-color="lemonLime"]{
+    background-color: var(--lemonLime);
+}
+.sectionColorPanel[data-color="apple"]{
+    background-color: var(--apple);
+}
+.sectionColorPanel[data-color="teal"]{
+    background-color: var(--teal);
+}
+.sectionColorPanel[data-color="redChalk"]{
+    background-color: var(--redChalk);
+}
+.sectionColorPanel[data-color="silver"]{
+    background-color: var(--silver);
 }
 .notebookSelect {
     padding: 5px 14px;

@@ -89,52 +89,52 @@
     border: 1px solid var(--grey20);
 } */
 .dropdown.icon.color[data-color="blue"]{
-    background-color: blue;
+    background-color: var(--blue);
 }
 .dropdown.icon.color[data-color="yellow"]{
-    background-color: yellow;
+    background-color: var(--yellow);
 }
 .dropdown.icon.color[data-color="green"]{
-    background-color: green;
+    background-color: var(--green);
 }
 .dropdown.icon.color[data-color="red"]{
-    background-color: red;
+    background-color: var(--red);
 }
 .dropdown.icon.color[data-color="purple"]{
-    background-color: purple;
+    background-color: var(--purple);
 }
 .dropdown.icon.color[data-color="cyan"]{
-    background-color: cyan;
+    background-color: var(--cyan);
 }
 .dropdown.icon.color[data-color="orange"]{
-    background-color: orange;
+    background-color: var(--orange);
 }
 .dropdown.icon.color[data-color="magenta"]{
-    background-color: magenta;
+    background-color: var(--magenta);
 }
 .dropdown.icon.color[data-color="blueMist"]{
-    background-color: rgb(43, 101, 226);
+    background-color: var(--blueMist);
 }
 .dropdown.icon.color[data-color="purpleMist"]{
-    background-color: blueviolet;
+    background-color: var(--purpleMist);
 }
 .dropdown.icon.color[data-color="tan"]{
-    background-color: tan;
+    background-color: var(--tan);
 }
 .dropdown.icon.color[data-color="lemonLime"]{
-    background-color: limegreen;
+    background-color: var(--lemonLime);
 }
 .dropdown.icon.color[data-color="apple"]{
-    background-color: rgb(31, 207, 61);
+    background-color: var(--apple);
 }
 .dropdown.icon.color[data-color="teal"]{
-    background-color: teal;
+    background-color: var(--teal);
 }
 .dropdown.icon.color[data-color="redChalk"]{
-    background-color: rgb(250, 103, 103);
+    background-color: var(--redChalk);
 }
 .dropdown.icon.color[data-color="silver"]{
-    background-color: silver;
+    background-color: var(--silver);
 }
 
 .dropdown.text {

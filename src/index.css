@@ -37,8 +37,55 @@
     --addPageButtonTextColor: rgb(200, 175, 230);
     --shareButton: rgb(220, 205, 246);
     --shareButtonHover: rgb(240, 225, 255);
-    --colorOptionBlue: rgb(5,80,150);
-    --colorOptionBlueHover: rgb(6,95,170);
+
+    /* Colors */
+    --blue: hsl(209, 94%, 31%);
+    --blueHover: hsl(209, 94%, 41%);
+
+    --yellow: hsl(47, 100%, 29%);
+    --yellowHover: hsl(47, 100%, 39%);
+
+    --green: hsl(125, 48%, 32%);
+    --greenHover: hsl(125, 48%, 42%);
+
+    --red: hsl(355, 70%, 38%);
+    --redHover: hsl(355, 70%, 48%);
+
+    --purple: hsl(284, 84%, 36%);
+    --purpleHover: hsl(284, 84%, 46%);
+
+    --cyan: hsl(184, 100%, 20%);
+    --cyanHover: hsl(184, 100%, 30%);
+
+    --orange: hsl(22, 99%, 39%);
+    --orangeHover: hsl(22, 99%, 49%);
+
+    --magenta: hsl(321, 64%, 44%);
+    --magentaHover: hsl(321, 64%, 54%);
+
+    --blueMist: hsl(222, 30%, 30%);
+    --blueMistHover: hsl(222, 30%, 40%);
+
+    --purpleMist: hsl(267, 45%, 41%);
+    --purpleMistHover: hsl(267, 45%, 51%);
+
+    --tan: hsl(26, 32%, 33%);
+    --tanHover: hsl(26, 32%, 43%);
+
+    --lemonLime: hsl(83, 48%, 33%);
+    --lemonLimeHover: hsl(83, 48%, 43%);
+
+    --apple: hsl(162, 20%, 33%);
+    --appleHover: hsl(162, 20%, 43%);
+
+    --teal: hsl(163, 91%, 18%);
+    --tealHover: hsl(163, 91%, 28%);
+
+    --redChalk: hsl(0,54%,39%);
+    --redChalkHover: hsl(0,54%,49%);
+
+    --silver: hsl(240,2%,42%);
+    --silverHover: hsl(240,2%,52%);
 }
 body {
     background-color: black;

@@ -13,6 +13,7 @@ const state = {
     pageDisplayContainer: document.querySelector(`.pageDisplay`),
     dropdownContainer: document.querySelector(`.dropdownContainer`),
     colorDropdownContainer: document.querySelector(`.colorDropdownContainer`),
+    sectionColorPanel: document.querySelector(`.sectionColorPanel`),
 
     currentlyOpenNotebook: null,
 
@@ -38,7 +39,7 @@ const state = {
         this.name = name;
         this.pages = [new state.Page(0)];
         this.openPage = this.pages[0];
-        this.color = `white`;
+        this.color = state.getRandomColor();
     },
     Page: function (index) {
         this.index = index;
@@ -120,6 +121,7 @@ const state = {
             let section = document.createElement(`div`);
             let sectionName = document.createElement(`div`);
             if(state.currentlyOpenNotebook.openSection === ele) {
+                state.sectionColorPanel.dataset.color = ele.color;
                 section.className = `section open`
                 sectionName.className = `sectionName open`
             } else {
@@ -128,6 +130,8 @@ const state = {
             }
             section.dataset.index = ele.index;
             
+            section.dataset.color = ele.color;
+
             sectionName.textContent = ele.name;
             sectionName.dataset.index = ele.index;
             section.append(sectionName);
@@ -273,7 +277,7 @@ const state = {
         state.updatePageList();
         state.updatePageDisplay();
     },
-    showColorDropdown: () => {
+    showColorDropdown: () => { // TODO: Need to make sure this wont go off of the page.
         let parentDropdownContainer = state.currentDropdownEle;
         state.colorDropdownContainer.style.display = `flex`;
 
@@ -297,6 +301,15 @@ const state = {
             state.currentDropdownEle2.style.display = `none`;
             state.currentDropdownEle2 = null;
         }
+    },
+    changeColor: (clickTarget) => {
+        state.currentlyOpenNotebook.sections[state.currentDropdownTargetEle.dataset.index].color = clickTarget.dataset.color;
+        state.updateSectionSelectContainer()
+    },
+    getRandomColor: () => {
+        const randomNum = Math.floor(Math.random() * 16);
+        const colors = [`blue`,`yellow`,`green`,`red`,`purple`,`cyan`,`orange`,`magenta`,`blueMist`,`purpleMist`,`tan`,`lemonLime`,`apple`,`teal`,`redChalk`,`silver`];
+        return colors[randomNum];
     },
 }
 
