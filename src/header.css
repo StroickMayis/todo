@@ -155,7 +155,7 @@ header {
 .feedback:hover {
     background-color: var(--grey40)
 }
-.divider {
+.optionDivider {
     flex: 1 1 auto;
     padding: 4px 16px;
 }

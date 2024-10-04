@@ -7,6 +7,123 @@
     <title>OneNote Clone</title>
 </head>
 <body>
+    <div class="colorDropdownContainer">
+        <div class="dropdown item hover color selected">
+            <div class="dropdown icon hover color selected" data-color="blue"></div>
+            <div class="dropdown text hover color">Blue</div>
+        </div>
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="yellow"></div>
+            <div class="dropdown text hover color">Yellow</div>
+        </div>
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="green"></div>
+            <div class="dropdown text hover color">Green</div>
+        </div>
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="red"></div>
+            <div class="dropdown text hover color">Red</div>
+        </div>
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="purple"></div>
+            <div class="dropdown text hover color">Purple</div>
+        </div>
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="cyan"></div>
+            <div class="dropdown text hover color">Cyan</div>
+        </div>
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="orange"></div>
+            <div class="dropdown text hover color">Orange</div>
+        </div>
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="magenta"></div>
+            <div class="dropdown text hover color">Magenta</div>
+        </div>      
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="blueMist"></div>
+            <div class="dropdown text hover color">Blue Mist</div>
+        </div> 
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="purpleMist"></div>
+            <div class="dropdown text hover color">Purple Mist</div>
+        </div> 
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="tan"></div>
+            <div class="dropdown text hover color">Tan</div>
+        </div> 
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="lemonLime"></div>
+            <div class="dropdown text hover color">Lemon Lime</div>
+        </div> 
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="apple"></div>
+            <div class="dropdown text hover color">Apple</div>
+        </div> 
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="teal"></div>
+            <div class="dropdown text hover color">Teal</div>
+        </div> 
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="redChalk"></div>
+            <div class="dropdown text hover color">Red Chalk</div>
+        </div> 
+        <div class="dropdown item hover color">
+            <div class="dropdown icon hover color" data-color="silver"></div>
+            <div class="dropdown text hover color">Silver</div>
+        </div> 
+    </div>
+    <div class="dropdownContainer">
+        <div class="dropdown item hover dropdownRename">
+            <div class="dropdown icon hover dropdownRename">+</div>
+            <div class="dropdown text hover dropdownRename">Rename</div>
+        </div>
+        <div class="dropdown item hover">
+            <div class="dropdown icon hover">+</div>
+            <div class="dropdown text hover">Export...</div>
+        </div>
+        <div class="dropdown item hover dropdownDelete">
+            <div class="dropdown icon hover dropdownDelete">X</div>
+            <div class="dropdown text hover dropdownDelete">Delete</div>
+        </div>
+        <div class="dropdown item hover">
+            <div class="dropdown icon hover">+</div>
+            <div class="dropdown text hover">Move or Copy...</div>
+        </div>
+        <div class="dropdown item hover">
+            <div class="dropdown icon hover">+</div>
+            <div class="dropdown text hover">Merge into other Section...</div>
+        </div>
+
+        <div class="dropdown divider"></div>
+
+        <div class="dropdown item hover">
+            <div class="dropdown icon hover">+</div>
+            <div class="dropdown text hover">Copy Link to Section...</div>
+        </div>
+
+        <div class="dropdown divider"></div>
+
+        <div class="dropdown item hover">
+            <div class="dropdown icon hover">+</div>
+            <div class="dropdown text hover">New Section</div>
+        </div>
+        <div class="dropdown item hover">
+            <div class="dropdown icon hover">+</div>
+            <div class="dropdown text hover">New Section Group</div>
+        </div>      
+
+        <div class="dropdown divider"></div>
+
+        <div class="dropdown item hover">
+            <div class="dropdown icon hover">+</div>
+            <div class="dropdown text hover">Password Protect This Section...</div>
+        </div> 
+        <div class="dropdown item hover openColorDropdown">
+            <div class="dropdown icon hover openColorDropdown">+</div>
+            <div class="dropdown text hover openColorDropdown">Section Color</div>
+        </div> 
+    </div>
     <dialog class="addNotebookModal">
         <button class="closeAddNotebookModalBtn">X</button>
         <label for="notebookName">Notebook Name:</label>
@@ -44,7 +161,7 @@
             <div class="optionLeft">&nbsp;Review&nbsp;</div>
             <div class="optionLeft">&nbsp;View&nbsp;</div>
             <div class="optionLeft">&nbsp;Help&nbsp;</div>
-            <div class="divider"></div>
+            <div class="optionDivider"></div>
             <div class="stickyNotes">Sticky Notes</div>
             <div class="share">
                 <div class="shareText">Share</div>
@@ -95,14 +212,7 @@
                 </div>
             </div>
             <div class="pageDisplay">
-                <div class="page">
-                    <div class="pageInfo">
-                        <div class="pageTitle">Title</div>
-                        <div class="pageInfoLine"></div>
-                        <div class="pageDate">Tuesday, October 1, 2024&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4:46 PM</div>
-                    </div>
-                    <div class="pageContent"></div>
-                </div>
+                
             </div>
         </div>
     </main>

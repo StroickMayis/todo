@@ -30,8 +30,6 @@
     color: var(--shareButton);
 }
 
-
-
 .notebookDropdown.notebook {
     display: flex;
     padding: 4px 16px;
